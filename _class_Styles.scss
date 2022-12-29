@@ -1,0 +1,87 @@
+@import "utilities";
+
+.box {
+  margin: 2rem auto 0;
+}
+
+.section__box {
+  padding: 0 1rem;
+}
+
+.section__name {
+  font-size: 1.875rem;
+  text-align: center;
+  color: $secondary-color;
+}
+
+.section__h2 {
+  border-top: 3px solid $secondary-color;
+  display: inline-block;
+  padding-top: 1rem;
+}
+
+.btn {
+  @include d_flex-jc_center;
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 2px solid $mainBackground-color;
+}
+
+.btn:hover,
+.menu-item__link:hover,
+.btn-cta:hover,
+.project-button:hover {
+  @include hover-style;
+  transition: 0.4s;
+}
+
+.highlight {
+  color: $complementary-color;
+  font-weight: bold;
+}
+
+.arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+a span::after {
+  content: ">>";
+}
+
+.grow {
+  transition: all .4s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+    @include hover-style;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .section__box {
+    padding: 0;
+  }
+}
+
+@media (min-height: 750px) {
+  .vertical-text {
+    text-orientation: upright;
+    font-size: small;
+  }
+
+}

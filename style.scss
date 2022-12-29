@@ -1,0 +1,150 @@
+@import "class_Styles";
+@import "variables";
+@import "header";
+@import "about";
+@import "utilities";
+@import "portfolio";
+@import "skills";
+@import "contact";
+@import "design-section";
+@import "scrollUp";
+@import "footer";
+@import "scrollUp";
+
+:root {
+  --doc-height: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  height: var(--doc-height);
+}
+
+body {
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  letter-spacing: 0.5px;
+}
+
+
+h3,
+p {
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  margin-bottom: clamp(0.2rem, 1vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2.5vw, 2.3rem);
+}
+
+p {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea {
+  border: none;
+}
+
+section {
+  margin: 0;
+}
+
+/*_____weboldal színei_____*/
+
+.header,
+.project__button,
+.icon-img,
+.form__submit,
+.footer {
+  background-color: $main-color;
+}
+
+.page-wrapper,
+.navbar {
+  background-color: $mainBackground-color;
+}
+
+.btn,
+.hamburger-menu:hover  {
+  cursor: pointer;
+}
+
+.btn,
+.footer {
+  color: $mainBackground-color;
+}
+
+.greeting-text,
+.profession-text,
+.about-text {
+  color: $text-color;
+}
+
+.devicon,
+.fab {
+  color: $main-color;
+}
+
+.menu-link,
+.section__name  {
+  color: $secondary-color;
+}
+
+/*_________________________*/
+
+.page-wrapper {
+  min-width: 200px;
+  max-width: 1600px;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.footer {
+  @include d_flex-jc_center;
+  flex-direction: row;
+  align-items: center;
+  min-height: 5rem;
+}
+
+@media (min-width: 768px) and (min-height: 601px) {
+  .page-wrapper {
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    justify-content: space-around;
+  }
+
+  section {
+    margin: 2rem;
+  }
+
+  .section__box {
+    max-width: 80rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+}

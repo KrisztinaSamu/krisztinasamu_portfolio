@@ -1,0 +1,23 @@
+@import "variables";
+
+@mixin d_flex-jc_center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin gradientColor {
+  background: $main-color;
+  background: linear-gradient(0deg, $secondary-color 7%, $main-color 100%);
+}
+
+@mixin hover-style {
+  @media (min-width: 768px) and (min-height: 601px) {
+    border-radius: 10px;
+    background-color: $main-color;
+    box-shadow: -7px -7px 20px 0px #a8f0f0, -4px -4px 20px 0px #a8f0f0,
+      7px 7px 25px 0px #0003, 4px 4px 15px 0px #0003,
+      inset 0px 0px 0px 0px #a8f0f0, inset 0px 0px 0px 0px #0003,
+      inset 0px 0px 0px 0px #a8f0f0, inset 0px 0px 0px 0px #0003;
+    transition: 0.4s;
+  }
+}
