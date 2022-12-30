@@ -35,9 +35,8 @@
   transition: 0.7s ease;
   position: relative;
 
-  /*színt váltani?*/
   &:hover {
-    color: rgb(151, 57, 151);
+    color: $complementary-color;
   }
 
   &:after {
@@ -52,7 +51,7 @@
     width: 100%;
     height: 2px;
     /**/
-    background-color: rgb(151, 57, 151);
+    background-color: $complementary-color;
     transition: transform 250ms;
     -webkit-transition: transform 250ms;
   }
