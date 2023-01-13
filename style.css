@@ -321,7 +321,7 @@ a span::after {
 }
 
 .project__box:hover {
-  height: auto + 1%;
+  height: auto1%;
 }
 
 .project__box-wrapper:nth-child(1) {
