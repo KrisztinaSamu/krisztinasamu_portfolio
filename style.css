@@ -353,9 +353,9 @@ a span::after {
 }
 
 @media (min-width: 768px) and (min-height: 601px) {
-  .project__picture {
+  /*.project__picture {
     height: 20rem;
-  }
+  }*/
   .project__header {
     font-size: 2rem;
     padding: 2rem 0;
