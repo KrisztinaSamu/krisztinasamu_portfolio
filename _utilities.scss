@@ -21,3 +21,17 @@
     transition: 0.4s;
   }
 }
+
+@mixin project-picture-view {
+  .project__picture {
+    display: none;
+  }
+
+  .project__picture-fullView {
+    width: 100%;
+    display: inline;
+  }
+
+
+
+}

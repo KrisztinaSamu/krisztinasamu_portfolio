@@ -320,10 +320,10 @@ a span::after {
   margin: 2rem auto;
 }
 
-.project__box:hover {
-  height: auto1%;
-}
+/*.project__box:hover {
 
+  height: auto + 1%;
+}*/
 .project__box-wrapper:nth-child(1) {
   margin: 0 0 1rem 0;
 }
@@ -336,6 +336,22 @@ a span::after {
 
 .project__picture {
   max-width: 100%;
+  display: block;
+}
+
+.project__picture-fullView {
+  display: none;
+}
+
+.project__picture:hover {
+  cursor: pointer;
+}
+.project__picture:hover .project__picture {
+  display: none;
+}
+.project__picture:hover .project__picture-fullView {
+  width: 100%;
+  display: inline;
 }
 
 .project__header {
@@ -353,9 +369,6 @@ a span::after {
 }
 
 @media (min-width: 768px) and (min-height: 601px) {
-  /*.project__picture {
-    height: 20rem;
-  }*/
   .project__header {
     font-size: 2rem;
     padding: 2rem 0;
