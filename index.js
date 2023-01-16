@@ -48,5 +48,26 @@ const documentHeight = () => {
 window.addEventListener('resize', documentHeight)
 documentHeight()
 
+/***** portfolio picture's tooltip *****/
+// selecting the elements for wich we want to add a tooltip
+
+/*window.onload=function(){
+
+const target = document.getElementsByClassName("project__picture");
+const tooltip = document.getElementsByClassName("tooltip-fullView");
+
+change display to "block" on mouseover
+
+target.addEventListener('mouseover', () => {
+  tooltip.style.display = "block";
+}, false);
+
+change display to "on" on mouseover
+
+target.addEventListener('mouseover', () => {
+  tooltip.style.display = "none";
+}, false);
+};*/
+
 
 

@@ -86,7 +86,8 @@ section {
 }
 
 .btn,
-.hamburger-menu:hover  {
+.hamburger-menu:hover,
+.project__picture:hover  {
   cursor: pointer;
 }
 
@@ -110,6 +111,16 @@ section {
 .section__name  {
   color: $secondary-color;
 }
+
+
+.btn:hover,
+.menu-item__link:hover,
+.btn-cta:hover,
+.project-button:hover {
+  @include hover-style;
+  transition: 0.4s;
+}
+  
 
 /*_________________________*/
 

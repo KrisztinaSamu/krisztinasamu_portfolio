@@ -32,24 +32,6 @@
   border: 2px solid #F4F6FF;
 }
 
-.btn:hover,
-.menu-item__link:hover,
-.btn-cta:hover,
-.project-button:hover {
-  transition: 0.4s;
-}
-@media (min-width: 768px) and (min-height: 601px) {
-  .btn:hover,
-.menu-item__link:hover,
-.btn-cta:hover,
-.project-button:hover {
-    border-radius: 10px;
-    background-color: #33cca6;
-    box-shadow: -7px -7px 20px 0px #a8f0f0, -4px -4px 20px 0px #a8f0f0, 7px 7px 25px 0px rgba(0, 0, 0, 0.2), 4px 4px 15px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 0px 0px #a8f0f0, inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 0px 0px #a8f0f0, inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
-    transition: 0.4s;
-  }
-}
-
 .highlight {
   color: #10287a;
   font-weight: bold;
@@ -66,13 +48,60 @@ a span::after {
   content: ">>";
 }
 
-.grow {
-  transition: all 0.4s ease-in-out;
+/***** element flipping *****/
+.flip-box {
+  max-width: auto;
+  height: auto;
+  perspective: 1000px;
 }
-.grow:hover {
-  transform: scale(1.1);
+
+.flip-box__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
-@media (min-width: 768px) and (min-height: 601px) {
+
+.flip-box:hover .flip-box__inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box__front,
+.flip-box__back {
+  width: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.flip-box__front {
+  height: 100%;
+  visibility: visible;
+}
+
+.flip-box__back {
+  height: auto;
+}
+
+.flip-box__back {
+  transform: rotateY(180deg);
+}
+
+/****************************/
+@media (min-width: 768px) {
+  .btn {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .grow {
+    transition: all 0.4s ease-in-out;
+  }
+  .grow:hover {
+    transform: scale(1.1);
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) and (min-height: 601px) {
   .grow:hover {
     border-radius: 10px;
     background-color: #33cca6;
@@ -80,16 +109,12 @@ a span::after {
     transition: 0.4s;
   }
 }
-
-@media (min-width: 768px) {
-  .btn {
-    padding: 1rem;
-    margin: 1rem;
-  }
-}
 @media (min-width: 1000px) {
   .section__box {
     padding: 0;
+  }
+  .flip-box__front {
+    height: 100%;
   }
 }
 @media (min-height: 750px) {
@@ -315,15 +340,11 @@ a span::after {
 }
 
 .project__box {
-  max-width: 50rem;
+  max-width: 60rem;
   min-height: 20rem;
   margin: 2rem auto;
 }
 
-/*.project__box:hover {
-
-  height: auto + 1%;
-}*/
 .project__box-wrapper:nth-child(1) {
   margin: 0 0 1rem 0;
 }
@@ -335,23 +356,15 @@ a span::after {
 }
 
 .project__picture {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
+  transition: 0.5s ease-in-out;
+  /*kell*/
 }
 
-.project__picture-fullView {
-  display: none;
-}
-
-.project__picture:hover {
-  cursor: pointer;
-}
-.project__picture:hover .project__picture {
-  display: none;
-}
-.project__picture:hover .project__picture-fullView {
-  width: 100%;
-  display: inline;
+.flip-box__project-picture {
+  width: 85vw;
+  height: 20vh;
 }
 
 .project__header {
@@ -382,6 +395,13 @@ a span::after {
     display: grid;
     grid-area: picture;
     padding: 0;
+  }
+  .flip-box__project-picture {
+    max-width: 20vw;
+    grid-area: picture;
+  }
+  .project__picture:hover {
+    scale: 1.2;
   }
   .project__description-wrapper {
     display: grid;
@@ -674,7 +694,8 @@ section {
 }
 
 .btn,
-.hamburger-menu:hover {
+.hamburger-menu:hover,
+.project__picture:hover {
   cursor: pointer;
 }
 
@@ -697,6 +718,24 @@ section {
 .menu-link,
 .section__name {
   color: #248f74;
+}
+
+.btn:hover,
+.menu-item__link:hover,
+.btn-cta:hover,
+.project-button:hover {
+  transition: 0.4s;
+}
+@media (min-width: 768px) and (min-height: 601px) {
+  .btn:hover,
+.menu-item__link:hover,
+.btn-cta:hover,
+.project-button:hover {
+    border-radius: 10px;
+    background-color: #33cca6;
+    box-shadow: -7px -7px 20px 0px #a8f0f0, -4px -4px 20px 0px #a8f0f0, 7px 7px 25px 0px rgba(0, 0, 0, 0.2), 4px 4px 15px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 0px 0px #a8f0f0, inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 0px 0px #a8f0f0, inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.4s;
+  }
 }
 
 /*_________________________*/
