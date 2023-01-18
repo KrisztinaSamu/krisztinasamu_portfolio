@@ -6,8 +6,8 @@
   }
 
   &__box {
-    min-width: 20%;
-    margin: 0 auto;
+    /*min-width: 20%;
+    margin: 0 auto;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,6 +16,7 @@
 
   &-text__box {
     width: 100%;
+    padding: 2rem 1rem;
   }
 
   &-photo {
@@ -30,7 +31,14 @@
 }
 
 .fa-google {
-  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  background: conic-gradient(
+      from -45deg,
+      #ea4335 110deg,
+      #4285f4 90deg 180deg,
+      #34a853 180deg 270deg,
+      #fbbc05 270deg
+    )
+    73% 55%/150% 150% no-repeat;
 }
 
 .fa-stack-overflow {
@@ -45,13 +53,27 @@
   -webkit-text-fill-color: transparent;
 }
 
+@media (min-width: 425px) and (min-height: 501px) {
+  .about-section {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .about__img-box {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: 768px) and (min-height: 501px) {
   .about-section {
     margin: 0;
+    max-width: 100%;
   }
 
   .about__box {
     justify-content: center;
+    min-width: 25%;
   }
 
   .about__box-greeting {

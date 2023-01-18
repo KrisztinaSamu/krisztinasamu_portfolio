@@ -256,8 +256,8 @@ a span::after {
   max-width: 100%;
 }
 .about__box {
-  min-width: 20%;
-  margin: 0 auto;
+  /*min-width: 20%;
+  margin: 0 auto;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -265,6 +265,7 @@ a span::after {
 }
 .about-text__box {
   width: 100%;
+  padding: 2rem 1rem;
 }
 .about-photo {
   max-width: 100%;
@@ -292,12 +293,24 @@ a span::after {
   -webkit-text-fill-color: transparent;
 }
 
+@media (min-width: 425px) and (min-height: 501px) {
+  .about-section {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  .about__img-box {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
 @media (min-width: 768px) and (min-height: 501px) {
   .about-section {
     margin: 0;
+    max-width: 100%;
   }
   .about__box {
     justify-content: center;
+    min-width: 25%;
   }
   .about__box-greeting {
     height: auto;
@@ -650,8 +663,8 @@ p {
 }
 
 h2 {
-  font-size: clamp(1.5rem, 4vw, 3rem);
-  margin-bottom: clamp(0.2rem, 1vw, 3rem);
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  margin-bottom: clamp(0.3rem, 1vw, 3rem);
 }
 
 h3 {
