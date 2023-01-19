@@ -267,14 +267,18 @@ a span::after {
   width: 100%;
   padding: 2rem 1rem;
 }
+.about__img-box {
+  display: flex;
+  justify-content: center;
+}
 .about-photo {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   border: 0.5rem solid white;
 }
 
 .cta {
-  width: 100%;
+  width: 90%;
 }
 
 .fa-google {
@@ -299,8 +303,7 @@ a span::after {
     margin: 0 auto;
   }
   .about__img-box {
-    width: 50%;
-    margin: 0 auto;
+    width: 100%;
   }
 }
 @media (min-width: 768px) and (min-height: 501px) {
@@ -328,6 +331,7 @@ a span::after {
   .cta {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
   .btn-cta {
     max-width: 55%;
@@ -353,7 +357,7 @@ a span::after {
 }
 
 .project__box {
-  max-width: 60rem;
+  max-width: 80rem;
   min-height: 20rem;
   margin: 2rem auto;
 }
@@ -671,6 +675,7 @@ h3 {
   font-size: clamp(1.2rem, 2.5vw, 2.3rem);
 }
 
+a,
 p {
   font-size: clamp(1.2rem, 2vw, 1.5rem);
 }
