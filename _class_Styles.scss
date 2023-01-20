@@ -48,6 +48,10 @@ a span::after {
   content: ">>";
 }
 
+.small-textSize {
+  font-size: small;
+}
+
 /***** element flipping *****/
 
 .flip-box {
@@ -81,7 +85,8 @@ a span::after {
 }
 
 .flip-box__back {
-  height: auto;
+  height: 40vh;
+  top: -7rem;
 }
 
 .flip-box__back {
@@ -113,12 +118,5 @@ a span::after {
 
   .flip-box__front {
     height: 100%;
-  }
-}
-
-@media (min-height: 750px) {
-  .vertical-text {
-    text-orientation: upright;
-    font-size: small;
   }
 }

@@ -19,8 +19,12 @@
 
 .project__box {
   max-width: 80rem;
-  min-height: 20rem;
+  min-height: 35rem;
   margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .project__box-wrapper:nth-child(1) {
@@ -68,7 +72,9 @@
   .project__content-wrapper {
     display: grid;
     grid-template-areas: "picture description";
+    grid-template-columns: 1fr 2fr;
     align-items: center;
+    padding: 0 3rem;
   }
 
   .project__picture-wrapper {
@@ -80,6 +86,10 @@
   .flip-box__project-picture {
     max-width: 20vw;
     grid-area: picture;
+  }
+
+  .project__picture {
+    max-height: 20vh;
   }
 
   .project__picture:hover {

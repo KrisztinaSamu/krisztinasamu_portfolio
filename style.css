@@ -48,6 +48,10 @@ a span::after {
   content: ">>";
 }
 
+.small-textSize {
+  font-size: small;
+}
+
 /***** element flipping *****/
 .flip-box {
   max-width: auto;
@@ -81,7 +85,8 @@ a span::after {
 }
 
 .flip-box__back {
-  height: auto;
+  height: 40vh;
+  top: -7rem;
 }
 
 .flip-box__back {
@@ -117,12 +122,6 @@ a span::after {
     height: 100%;
   }
 }
-@media (min-height: 750px) {
-  .vertical-text {
-    text-orientation: upright;
-    font-size: small;
-  }
-}
 /*.header {
   height: 100vh;
 }*/
@@ -142,7 +141,7 @@ a span::after {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0.5rem;
+  padding: 1rem 2rem;
 }
 
 .nav-menu {
@@ -187,7 +186,7 @@ a span::after {
   flex-direction: column;
   justify-content: center;
   width: 1.6rem;
-  padding: 0 3rem;
+  padding: 0 2rem;
 }
 .hamburger-menu .bar {
   width: 1.6rem;
@@ -228,7 +227,7 @@ a span::after {
 
 .nav-menu.active {
   top: 0;
-  background-color: #33cca6;
+  background-color: #F4F6FF;
 }
 
 @media (min-width: 768px) and (min-height: 601px) {
@@ -252,12 +251,15 @@ a span::after {
     font-size: 1.375rem;
   }
 }
+.about {
+  /*&__box-greeting {
+    height: 100vh;
+  }*/
+}
 .about-section {
   max-width: 100%;
 }
 .about__box {
-  /*min-width: 20%;
-  margin: 0 auto;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -358,8 +360,12 @@ a span::after {
 
 .project__box {
   max-width: 80rem;
-  min-height: 20rem;
+  min-height: 35rem;
   margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .project__box-wrapper:nth-child(1) {
@@ -406,7 +412,9 @@ a span::after {
   .project__content-wrapper {
     display: grid;
     grid-template-areas: "picture description";
+    grid-template-columns: 1fr 2fr;
     align-items: center;
+    padding: 0 3rem;
   }
   .project__picture-wrapper {
     display: grid;
@@ -416,6 +424,9 @@ a span::after {
   .flip-box__project-picture {
     max-width: 20vw;
     grid-area: picture;
+  }
+  .project__picture {
+    max-height: 20vh;
   }
   .project__picture:hover {
     scale: 1.2;
