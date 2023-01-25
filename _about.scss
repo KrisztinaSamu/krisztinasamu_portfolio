@@ -3,6 +3,11 @@
 .about {
   &-section {
     max-width: 100%;
+
+    @include mobile425 {
+      max-width: 85%;
+      margin: 0 auto;
+    }
   }
 
   &__box {
@@ -23,10 +28,13 @@
 
   &__img-box {
     @include d_flex-jc_center;
+    @include mobile425 {
+      width: 80%;
+    }
   }
 
   &-photo {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     border: 0.5rem solid white;
   }
@@ -37,14 +45,11 @@
 }
 
 .fa-google {
-  background: conic-gradient(
-      from -45deg,
+  background: conic-gradient(from -45deg,
       #ea4335 110deg,
       #4285f4 90deg 180deg,
       #34a853 180deg 270deg,
-      #fbbc05 270deg
-    )
-    73% 55%/150% 150% no-repeat;
+      #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
 }
 
 .fa-stack-overflow {
@@ -59,22 +64,14 @@
   -webkit-text-fill-color: transparent;
 }
 
-@media (min-width: 425px) and (min-height: 501px) {
-  .about-section {
-    max-width: 85%;
-    margin: 0 auto;
-  }
+/*@media (min-width: 425px) and (min-height: 501px) {
 
   .about__img-box {
     width: 100%;
   }
-}
+}*/
 
 @media (min-width: 768px) and (min-height: 501px) {
-  .about-section {
-    margin: 0;
-    max-width: 100%;
-  }
 
   .about__box {
     justify-content: center;
@@ -92,10 +89,6 @@
   .about__box,
   .project__description-wrapper {
     padding: 1rem 2rem 0;
-  }
-
-  .about__img-box {
-    width: 100%;
   }
 
   .cta {

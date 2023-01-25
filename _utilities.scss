@@ -1,5 +1,49 @@
 @import "variables";
 
+/***********************/
+/**** Screen sizes *****/
+
+@mixin mobile300 {
+  @media (max-width: 300px) {
+    @content;
+  }
+}
+
+@mixin mobile425 {
+  @media (min-width: 425px) {
+    @content;
+  }
+}
+
+/*
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+*/
+
+@mixin desktop768 {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop992 {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin desktop1440 {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+/***********************/
+
 @mixin d_flex-jc_center {
   display: flex;
   justify-content: center;
