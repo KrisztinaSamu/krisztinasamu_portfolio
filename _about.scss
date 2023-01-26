@@ -2,8 +2,6 @@
 
 .about {
   &-section {
-    max-width: 100%;
-
     @include mobile425 {
       max-width: 85%;
       margin: 0 auto;
@@ -15,11 +13,16 @@
     flex-direction: column;
     align-items: center;
     text-align: justify;
-  }
 
-  /*&__box-greeting {
-    height: 100vh;
-  }*/
+    @include desktop768 {
+      justify-content: center;
+      //min-width: 25%;
+    }
+
+    /*&-greeting {
+      height: 100vh;
+    }*/
+  }
 
   &-text__box {
     width: 100%;
@@ -28,20 +31,27 @@
 
   &__img-box {
     @include d_flex-jc_center;
-    @include mobile425 {
-      width: 80%;
-    }
+
+    /*@include mobile425 {
+      width: 70%;
+    }*/
   }
 
   &-photo {
     max-width: 100%;
     height: auto;
     border: 0.5rem solid white;
+
+    @include desktop768 {
+      max-width: 15vw;
+    }
   }
 }
 
-.cta {
-  width: 90%;
+.section__box-about {
+  @include desktop768 {
+    display: flex;
+  }
 }
 
 .fa-google {
@@ -64,40 +74,16 @@
   -webkit-text-fill-color: transparent;
 }
 
-/*@media (min-width: 425px) and (min-height: 501px) {
-
-  .about__img-box {
-    width: 100%;
-  }
-}*/
-
-@media (min-width: 768px) and (min-height: 501px) {
-
-  .about__box {
-    justify-content: center;
-    min-width: 25%;
-  }
-
-  .about__box-greeting {
-    height: auto;
-  }
-
-  .section__box-about {
-    display: flex;
-  }
-
-  .about__box,
-  .project__description-wrapper {
-    padding: 1rem 2rem 0;
-  }
-
-  .cta {
+.cta {
+  @include desktop768 {
     display: flex;
     justify-content: center;
     width: 100%;
   }
+}
 
-  .btn-cta {
+.btn-cta {
+  @include desktop768 {
     max-width: 55%;
   }
 }
