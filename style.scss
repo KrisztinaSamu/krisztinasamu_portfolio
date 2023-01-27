@@ -1,4 +1,4 @@
-@import "class_Styles";
+@import "class_styles";
 @import "variables";
 @import "header";
 @import "about";
@@ -69,6 +69,21 @@ textarea {
 
 section {
   margin: 0;
+
+  @include desktop768 {
+    margin: 2rem;
+  }
+}
+
+.page-wrapper {
+  min-width: 200px;
+  max-width: 1600px;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  @include desktop768 {
+    font-size: 1.3rem;
+  }
 }
 
 /*_____weboldal színei_____*/
@@ -113,7 +128,6 @@ section {
   color: $secondary-color;
 }
 
-
 .btn:hover,
 .menu-item__link:hover,
 .btn-cta:hover,
@@ -122,41 +136,4 @@ section {
   transition: 0.4s;
 }
   
-
 /*_________________________*/
-
-.page-wrapper {
-  min-width: 200px;
-  max-width: 1600px;
-  min-height: 100vh;
-  margin: 0 auto;
-  font-size: 1.1rem;
-}
-
-.footer {
-  @include d_flex-jc_center;
-  flex-direction: row;
-  align-items: center;
-  min-height: 5rem;
-}
-
-@media (min-width: 768px) and (min-height: 601px) {
-  .page-wrapper {
-    font-size: 1.3rem;
-  }
-
-  .footer {
-    justify-content: space-around;
-  }
-
-  section {
-    margin: 2rem;
-  }
-
-  .section__box {
-    max-width: 80rem;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-}

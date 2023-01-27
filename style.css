@@ -287,13 +287,11 @@ a span::after {
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  /*&-greeting {
-    height: 100vh;
-  }*/
 }
 @media (min-width: 768px) {
   .about__box {
     justify-content: center;
+    padding: 1rem;
   }
 }
 .about-text__box {
@@ -303,9 +301,6 @@ a span::after {
 .about__img-box {
   display: flex;
   justify-content: center;
-  /*@include mobile425 {
-    width: 70%;
-  }*/
 }
 .about-photo {
   max-width: 100%;
@@ -321,6 +316,7 @@ a span::after {
 @media (min-width: 768px) {
   .section__box-about {
     display: flex;
+    justify-content: center;
   }
 }
 

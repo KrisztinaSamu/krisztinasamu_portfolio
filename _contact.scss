@@ -2,20 +2,28 @@
   max-width: 25rem;
 }
 
+.form__input,
+.form__submit,
+.form-btn__submit {
+  padding: 1rem;
+}
+
+.form__input,
+.form-btn__submit,
+.form__submit {
+  margin: 0.5rem auto;
+}
+
 .form__input {
+  width: 100%;
   background-color: #c5c6c7;
+  font-family: "Raleway", sans-serif;
   border: 2px solid $main-color;
 }
 
-.label {
-  font-size: 1rem;
-}
-
-.form__input {
-  font-family: "Raleway", sans-serif;
-  width: 100%;
-  padding: 1rem;
-  margin: 0.5rem auto;
+.label,
+.form__submit {
+  font-size: 1.2rem;
 }
 
 .form__input:focus-within {
@@ -25,18 +33,4 @@
 textarea.form__input {
   height: 15rem;
   overflow: hidden;
-}
-
-.form-btn__submit,
-.form__submit {
-  margin: 0 auto;
-}
-
-.form__submit {
-  font-size: 1.2rem;
-  padding: 0.8rem 1rem;
-}
-
-.form-btn__submit {
-  padding: 0.5rem 0;
 }
