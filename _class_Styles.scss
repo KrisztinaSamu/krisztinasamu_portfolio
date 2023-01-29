@@ -5,26 +5,26 @@
 .section {
   &__box {
     padding: 1rem;
-
-    @include desktop768 {
-      max-width: 80rem;
-      margin: 0 auto;
-    }
   }
 
   &__name {
     font-size: 1.875rem;
     text-align: center;
-    color: $secondary-color;
   }
 
   &__h2 {
-    border-top: 3px solid $secondary-color;
     display: inline-block;
+    //border-top: 3px solid $secondary-color;
     padding-top: 1rem;
   }
-
 }
+
+/*.section__box {
+  @include desktop768 {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+}*/
 
 .btn {
   @include d_flex-jc_center;
@@ -49,9 +49,8 @@
 }
 
 .arrow {
-  display: flex;
+  @include d_flex-jc_center;
   flex-direction: column;
-  justify-content: center;
   padding-left: 10px;
 }
 

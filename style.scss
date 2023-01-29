@@ -9,18 +9,6 @@
 @import "design-section";
 @import "scrollUp";
 @import "footer";
-@import "scrollUp";
-
-:root {
-  --doc-height: 100%;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  height: var(--doc-height);
-}
 
 body {
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
@@ -108,7 +96,8 @@ section {
 }
 
 .btn,
-.footer {
+.footer,
+.social-media-icon__items  {
   color: $mainBackground-color;
 }
 

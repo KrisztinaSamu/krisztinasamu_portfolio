@@ -37,6 +37,10 @@
     @include desktop768 {
       max-width: 15vw;
     }
+
+    @include desktop1440 {
+      max-width: 10vw;
+    }
   }
 }
 
@@ -68,8 +72,7 @@
 
 .cta {
   @include desktop768 {
-    display: flex;
-    justify-content: center;
+    @include d_flex-jc_center;
     width: 100%;
   }
 }

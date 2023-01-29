@@ -37,37 +37,3 @@ click.addEventListener("click", function() {
       block: "start"
   });
 });
-
-/***** setting height of the page *****/
-/*source code: https://dev.to/nirazanbasnet/dont-use-100vh-for-mobile-responsive-3o97 */
-
-const documentHeight = () => {
-  const doc = document.documentElement 
-  doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
-}
-window.addEventListener('resize', documentHeight)
-documentHeight()
-
-/***** portfolio picture's tooltip *****/
-// selecting the elements for wich we want to add a tooltip
-
-/*window.onload=function(){
-
-const target = document.getElementsByClassName("project__picture");
-const tooltip = document.getElementsByClassName("tooltip-fullView");
-
-change display to "block" on mouseover
-
-target.addEventListener('mouseover', () => {
-  tooltip.style.display = "block";
-}, false);
-
-change display to "on" on mouseover
-
-target.addEventListener('mouseover', () => {
-  tooltip.style.display = "none";
-}, false);
-};*/
-
-
-
