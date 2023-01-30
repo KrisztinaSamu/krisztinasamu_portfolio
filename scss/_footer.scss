@@ -4,20 +4,19 @@
   align-items: center;
   min-height: 5rem;
 
-  @include desktop768 {
+  @include media.min-width(medium) {
     justify-content: space-around;
   }
 }
 
 .icons-container {
-  border: 1px solid red;
   width: 100px;
   height: 20px;
-  background-color: red;
 }
 
 .social-media-icons__box {
-  @include d_flex-jc_center;
+  display: flex;
+  justify-content: center;
 }
 
 .social-media-icon__items {

@@ -1,8 +1,6 @@
-@import "utilities";
-
 .about {
   &-section {
-    @include mobile425 {
+    @include media.min-width(small) {
       max-width: 85%;
       margin: 0 auto;
     }
@@ -14,7 +12,7 @@
     align-items: center;
     text-align: justify;
 
-    @include desktop768 {
+    @include media.min-width(medium) {
       justify-content: center;
       padding: 1rem;
     }
@@ -34,18 +32,18 @@
     height: auto;
     border: 0.5rem solid white;
 
-    @include desktop768 {
+    @include media.min-width(medium) {
       max-width: 15vw;
     }
 
-    @include desktop1440 {
+    @include media.min-width(large) {
       max-width: 10vw;
     }
   }
 }
 
 .section__box-about {
-  @include desktop768 {
+  @include media.min-width(medium) {
     @include d_flex-jc_center;
   }
 }
@@ -71,14 +69,14 @@
 }
 
 .cta {
-  @include desktop768 {
+  @include media.min-width(medium) {
     @include d_flex-jc_center;
     width: 100%;
   }
 }
 
 .btn-cta {
-  @include desktop768 {
+  @include media.min-width(medium) {
     max-width: 55%;
   }
 }

@@ -19,7 +19,7 @@
   width: 100%;
   padding: 1rem 2rem;
 
-  @include desktop768 {
+  @include media.min-width(medium) {
     padding: 1rem;
   }
 }
@@ -30,7 +30,7 @@
 }
 
 .menu-item {
-  @include desktop768 {
+  @include media.min-width(medium) {
     font-size: 1.375rem;
   }
 }
@@ -70,7 +70,7 @@
   width: 1.6rem;
   padding: 0 2rem;
 
-  @include desktop768 {
+  @include media.min-width(medium) {
     display: none;
   }
 
@@ -112,7 +112,7 @@
   justify-content: space-evenly;
   transition: 0.8s ease;
 
-  @include desktop768 {
+  @include media.min-width(medium) {
     height: auto;
     position: relative;
     left: 0;

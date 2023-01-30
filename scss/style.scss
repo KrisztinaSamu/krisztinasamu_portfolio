@@ -1,14 +1,16 @@
-@import "class_styles";
-@import "variables";
-@import "header";
-@import "about";
-@import "utilities";
-@import "portfolio";
-@import "skills";
-@import "contact";
-@import "design-section";
-@import "scrollUp";
-@import "footer";
+@use "variables";
+@use "header";
+@use "about";
+@use "utilities";
+@use "portfolio";
+@use "skills";
+@use "contact";
+@use "design-section";
+@use "scrollUp";
+@use "footer";
+@use "media_queries";
+@use "classStyles";
+
 
 body {
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
@@ -21,7 +23,6 @@ body {
   user-select: none;
   letter-spacing: 0.5px;
 }
-
 
 h3,
 p {
@@ -97,7 +98,7 @@ section {
 
 .btn,
 .footer,
-.social-media-icon__items  {
+.social-media-icon__items {
   color: $mainBackground-color;
 }
 

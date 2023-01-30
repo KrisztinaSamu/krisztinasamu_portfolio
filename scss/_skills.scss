@@ -10,6 +10,10 @@
   width: 50%;
   height: 142px;
   margin-bottom: 10px;
+
+  @include media.min-width(medium) {
+    width: 25%;
+  }
 }
 
 .skills__img {
@@ -36,10 +40,4 @@
 
 .icon-img {
   width: 100%;
-}
-
-@media (min-width: 768px) and (min-height: 601px) {
-  .skills__item {
-    width: 25%;
-  }
 }

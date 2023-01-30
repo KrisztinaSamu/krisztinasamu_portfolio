@@ -14,17 +14,17 @@
 
   &__h2 {
     display: inline-block;
-    //border-top: 3px solid $secondary-color;
+    border-top: 3px solid $secondary-color;
     padding-top: 1rem;
   }
 }
 
-/*.section__box {
-  @include desktop768 {
+.section__box {
+  @include media.min-width(medium) {
     max-width: 80rem;
     margin: 0 auto;
   }
-}*/
+}
 
 .btn {
   @include d_flex-jc_center;
@@ -37,7 +37,7 @@
   margin: 0.5rem;
   border: 2px solid $mainBackground-color;
 
-  @include desktop768 {
+  @include media.min-width(medium) {
     padding: 1rem;
     margin: 1rem;
   }
@@ -63,12 +63,12 @@ a span::after {
 }
 
 .grow {
-  @include desktop768 {
+  @include media.min-width(medium) {
     transition: all 0.4s ease-in-out;
   }
 
   &:hover {
-    @include desktop768 {
+    @include media.min-width(medium) {
       transform: scale(1.1);
       @include hover-style;
     }
