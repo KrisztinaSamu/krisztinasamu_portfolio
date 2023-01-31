@@ -1,3 +1,5 @@
+@use './abstracts' as *;
+
 .project__box,
 .project__picture-wrapper,
 .project__button-container {
@@ -12,13 +14,13 @@
 .project__content-wrapper,
 .project__picture-wrapper,
 .project__description-wrapper {
-  @include media.min-width(medium) {
+  @include min-width(medium) {
     display: grid;
   }
 }
 
 .project__description-wrapper {
-  @include media.min-width(medium) {
+  @include min-width(medium) {
     grid-area: description;
   }
 }
@@ -36,7 +38,7 @@
   justify-content: space-between;
   border: 2px solid $main-color;
 
-  @include media.min-width(medium) {
+  @include min-width(medium) {
     max-width: 80rem;
   }
 }
@@ -49,7 +51,7 @@
   @include d_flex-jc_center;
   padding-bottom: 3rem;
 
-  @include media.min-width(medium) {
+  @include min-width(medium) {
     grid-area: picture;
     justify-items: center;
     padding: 0;
@@ -59,7 +61,7 @@
 .project__content-wrapper {
   padding: 0 0.5rem;
 
-  @include media.min-width(medium) {
+  @include min-width(medium) {
     grid-template-areas: "picture description";
     grid-template-columns: 1fr 2fr;
     align-items: center;
@@ -72,7 +74,7 @@
   padding: 2rem;
   text-align: center;
 
-  @include media.min-width(medium) {
+  @include min-width(medium) {
     font-size: 2rem;
   }
 }
@@ -82,13 +84,13 @@
   max-width: 80%;
   transition: 0.5s ease-in-out;
 
-  @include media.min-width(medium) {
+  @include min-width(medium) {
     max-height: 50vh;
     margin: 2rem 0;
   }
 
   &:hover {
-    @include media.min-width(medium) {
+    @include min-width(medium) {
       scale: 1.2;
     }
   }
@@ -102,7 +104,7 @@
   width: 85vw;
   height: 20vh;
 
-  @include media.min-width(medium) {
+  @include min-width(medium) {
     max-width: 20vw;
     grid-area: picture;
   }
@@ -111,7 +113,7 @@
 .project__button {
   width: 80vw;
 
-  @include media.min-width(medium) {
+  @include min-width(medium) {
     max-width: 25vw;
   }
 }

@@ -1,3 +1,5 @@
+@use './abstracts' as *;
+
 .name-logo {
   @include gradientColor;
   font-size: 1.8rem;
@@ -19,7 +21,7 @@
   width: 100%;
   padding: 1rem 2rem;
 
-  @include media.min-width(medium) {
+  @include min-width(medium) {
     padding: 1rem;
   }
 }
@@ -30,7 +32,7 @@
 }
 
 .menu-item {
-  @include media.min-width(medium) {
+  @include min-width(medium) {
     font-size: 1.375rem;
   }
 }
@@ -70,7 +72,7 @@
   width: 1.6rem;
   padding: 0 2rem;
 
-  @include media.min-width(medium) {
+  @include min-width(medium) {
     display: none;
   }
 
@@ -112,7 +114,7 @@
   justify-content: space-evenly;
   transition: 0.8s ease;
 
-  @include media.min-width(medium) {
+  @include min-width(medium) {
     height: auto;
     position: relative;
     left: 0;

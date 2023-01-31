@@ -1,6 +1,8 @@
+@use './abstracts' as *;
+
 .about {
   &-section {
-    @include media.min-width(small) {
+    @include min-width(small) {
       max-width: 85%;
       margin: 0 auto;
     }
@@ -12,7 +14,7 @@
     align-items: center;
     text-align: justify;
 
-    @include media.min-width(medium) {
+    @include min-width(medium) {
       justify-content: center;
       padding: 1rem;
     }
@@ -32,18 +34,18 @@
     height: auto;
     border: 0.5rem solid white;
 
-    @include media.min-width(medium) {
+    @include min-width(medium) {
       max-width: 15vw;
     }
 
-    @include media.min-width(large) {
+    @include min-width(large) {
       max-width: 10vw;
     }
   }
 }
 
 .section__box-about {
-  @include media.min-width(medium) {
+  @include min-width(medium) {
     @include d_flex-jc_center;
   }
 }
@@ -69,14 +71,14 @@
 }
 
 .cta {
-  @include media.min-width(medium) {
+  @include min-width(medium) {
     @include d_flex-jc_center;
     width: 100%;
   }
 }
 
 .btn-cta {
-  @include media.min-width(medium) {
+  @include min-width(medium) {
     max-width: 55%;
   }
 }

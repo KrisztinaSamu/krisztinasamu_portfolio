@@ -1,3 +1,5 @@
+@use 'colors' as *;
+
 @mixin d_flex-jc_center {
   display: flex;
   justify-content: center;

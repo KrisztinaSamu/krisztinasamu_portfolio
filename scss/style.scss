@@ -1,19 +1,17 @@
-@use "variables";
+@use "./abstracts";
 @use "header";
 @use "about";
-@use "utilities";
 @use "portfolio";
 @use "skills";
 @use "contact";
 @use "design-section";
 @use "scrollUp";
 @use "footer";
-@use "media_queries";
 @use "classStyles";
-
 
 body {
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
+  background-color: red;
 }
 
 * {
@@ -70,6 +68,7 @@ section {
   min-height: 100vh;
   margin: 0 auto;
   font-size: 1.1rem;
+
   @include desktop768 {
     font-size: 1.3rem;
   }
@@ -92,7 +91,7 @@ section {
 
 .btn,
 .hamburger-menu:hover,
-.project__picture:hover  {
+.project__picture:hover {
   cursor: pointer;
 }
 
@@ -114,7 +113,7 @@ section {
 }
 
 .menu-link,
-.section__name  {
+.section__name {
   color: $secondary-color;
 }
 
@@ -125,5 +124,5 @@ section {
   @include hover-style;
   transition: 0.4s;
 }
-  
+
 /*_________________________*/
