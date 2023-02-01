@@ -57,7 +57,7 @@ textarea {
 section {
   margin: 0;
 
-  @include desktop768 {
+  @include min-width(medium) {
     margin: 2rem;
   }
 }
@@ -69,7 +69,7 @@ section {
   margin: 0 auto;
   font-size: 1.1rem;
 
-  @include desktop768 {
+  @include min-width(medium) {
     font-size: 1.3rem;
   }
 }
