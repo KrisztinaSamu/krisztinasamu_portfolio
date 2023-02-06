@@ -30,17 +30,18 @@
   }
 
   &-photo {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
+    object-fit: cover;
     border: 0.5rem solid white;
 
-    @include min-width(medium) {
-      max-width: 15vw;
+    /*@include min-width(medium) {
+      max-width: 40%;
     }
 
     @include min-width(large) {
-      max-width: 10vw;
-    }
+      max-width: 20%;
+    }*/
   }
 }
 
