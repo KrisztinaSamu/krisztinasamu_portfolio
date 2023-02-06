@@ -1,4 +1,4 @@
-@use './abstracts' as *;
+@use "./abstracts" as *;
 
 .project__box,
 .project__picture-wrapper,
@@ -6,9 +6,12 @@
   display: flex;
 }
 
-.project__box,
 .project__box-wrapper {
-  flex-direction: column;
+  @include min-width(medium) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .project__content-wrapper,
@@ -26,20 +29,28 @@
 }
 
 .project__button-container {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+
+  @include min-width(medium) {
+    flex-direction: row;
+  }
 }
 
 .project__box {
-  max-width: 30rem;
   min-height: 35rem;
-  margin: 2rem auto;
-  justify-content: space-between;
+  margin: 1rem auto;
+  padding: 1rem;
   border: 2px solid $main-color;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
 
   @include min-width(medium) {
-    max-width: 80rem;
+    width: 80%;
+  }
+  @include min-width(large) {
+    width: 45%;
   }
 }
 
@@ -95,10 +106,6 @@
     }
   }
 }
-
-/*.project__picture:hover {
-  scale: 1.2;
-}*/
 
 .flip-box__project-picture {
   width: 85vw;

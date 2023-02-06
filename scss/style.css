@@ -213,9 +213,12 @@
   display: flex;
 }
 
-.project__box,
-.project__box-wrapper {
-  flex-direction: column;
+@media (min-width: 768px) {
+  .project__box-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 768px) {
@@ -233,21 +236,32 @@
 }
 
 .project__button-container {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .project__button-container {
+    flex-direction: row;
+  }
 }
 
 .project__box {
-  max-width: 30rem;
   min-height: 35rem;
-  margin: 2rem auto;
-  justify-content: space-between;
+  margin: 1rem auto;
+  padding: 1rem;
   border: 2px solid #33cca6;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
 }
 @media (min-width: 768px) {
   .project__box {
-    max-width: 80rem;
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .project__box {
+    width: 45%;
   }
 }
 
@@ -308,9 +322,6 @@
   }
 }
 
-/*.project__picture:hover {
-  scale: 1.2;
-}*/
 .flip-box__project-picture {
   width: 85vw;
   height: 20vh;
@@ -543,8 +554,7 @@ textarea.form__input {
 
 @media (min-width: 768px) {
   .section__box {
-    max-width: 80rem;
-    margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -552,7 +562,6 @@ textarea.form__input {
   display: flex;
   justify-content: center;
   max-width: 100%;
-  height: auto;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
@@ -628,14 +637,13 @@ a span::after {
 
 .flip-box__front,
 .flip-box__back {
-  width: 100%;
+  width: 50%;
   position: absolute;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
 
 .flip-box__front {
-  height: 100%;
   visibility: visible;
 }
 

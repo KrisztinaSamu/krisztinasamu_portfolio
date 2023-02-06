@@ -23,15 +23,13 @@
 
 .section__box {
   @include min-width(medium) {
-    max-width: 80rem;
-    margin: 0 auto;
+    width: 100%;
   }
 }
 
 .btn {
   @include d_flex-jc_center;
   max-width: 100%;
-  height: auto;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
@@ -100,13 +98,13 @@ a span::after {
 
 .flip-box__front,
 .flip-box__back {
-  width: 100%;
+  width: 50%;
   position: absolute;
   backface-visibility: hidden;
 }
 
 .flip-box__front {
-  height: 100%;
+  //height: 100%;
   visibility: visible;
 }
 
