@@ -1,4 +1,4 @@
-@use './abstracts' as *;
+@use "./abstracts" as *;
 
 .skills__box {
   display: flex;
@@ -22,11 +22,6 @@
   width: 5rem;
   margin: 1rem;
   border-radius: 3.125rem;
-}
-
-.devicon,
-.fab {
-  font-size: 3.5rem;
 }
 
 .icon-name {

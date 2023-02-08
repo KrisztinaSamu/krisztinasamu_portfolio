@@ -22,3 +22,7 @@
     transition: 0.4s;
   }
 }
+
+@mixin border-style {
+  border-radius: 50%;
+}

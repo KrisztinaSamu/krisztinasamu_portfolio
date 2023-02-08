@@ -1,4 +1,4 @@
-@use './abstracts' as *;
+@use "./abstracts" as *;
 @use "header";
 @use "about";
 @use "portfolio";
@@ -94,9 +94,15 @@ section {
   cursor: pointer;
 }
 
+.menu-link,
+.section__name {
+  color: $secondary-color;
+}
+
 .btn,
 .footer,
-.social-media-icon__items {
+.devicon-github-plain,
+.devicon-linkedin-plain {
   color: $mainBackground-color;
 }
 
@@ -109,11 +115,6 @@ section {
 .devicon,
 .fab {
   color: $main-color;
-}
-
-.menu-link,
-.section__name {
-  color: $secondary-color;
 }
 
 .btn:hover,

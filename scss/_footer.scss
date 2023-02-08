@@ -1,4 +1,4 @@
-@use './abstracts' as *;
+@use "./abstracts" as *;
 
 .footer {
   @include d_flex-jc_center;
@@ -16,15 +16,22 @@
   height: 20px;
 }
 
+.social-media__box,
 .social-media-icons__box {
-  display: flex;
-  justify-content: center;
+  @include d_flex-jc_center;
 }
 
-.social-media-icon__items {
-  width: 50%;
-  height: 142px;
-  margin-bottom: 10px;
+.social-media-icons__box {
+  flex-wrap: wrap;
+}
+
+.social-media-icon__item {
+  margin: 1rem 2rem;
+}
+
+.devicon-github-plain,
+.devicon-linkedin-plain {
+  @include border-style;
 }
 
 .copyright {

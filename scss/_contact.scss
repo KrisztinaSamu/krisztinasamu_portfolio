@@ -1,4 +1,4 @@
-@use './abstracts' as *;
+@use "./abstracts" as *;
 
 .contact__box {
   max-width: 25rem;
@@ -35,4 +35,8 @@
 textarea.form__input {
   height: 15rem;
   overflow: hidden;
+}
+
+.form-btn__submit {
+  @include d_flex-jc_center;
 }

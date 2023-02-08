@@ -1,4 +1,4 @@
-@use './abstracts' as *;
+@use "./abstracts" as *;
 
 .box {
   margin: 2rem auto 0;
@@ -43,6 +43,10 @@
   }
 }
 
+.icon {
+  font-size: 3.5rem;
+}
+
 .highlight {
   color: $complementary-color;
   font-weight: bold;
@@ -84,6 +88,7 @@ a span::after {
 
 .flip-box__inner {
   @include d_flex-jc_center;
+  align-items: center;
   position: relative;
   width: 100%;
   height: 100%;
@@ -112,7 +117,16 @@ a span::after {
   padding: 0.5rem 0;
 }
 
-
 .flip-box__back {
   transform: rotateY(180deg);
+}
+
+.flip-box__project-picture {
+  width: 100%;
+  height: 20vh;
+
+  @include min-width(medium) {
+    max-width: 20vw;
+    grid-area: picture;
+  }
 }
