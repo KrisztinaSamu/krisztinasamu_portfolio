@@ -30,6 +30,7 @@
 .btn {
   @include d_flex-jc_center;
   max-width: 100%;
+  height: 100%;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
@@ -39,7 +40,6 @@
 
   @include min-width(medium) {
     padding: 1rem;
-    margin: 1rem;
   }
 }
 
@@ -79,7 +79,6 @@ a span::after {
 
 .flip-box {
   max-width: auto;
-  //height: auto;
   perspective: 1000px;
 }
 
@@ -98,21 +97,21 @@ a span::after {
 
 .flip-box__front,
 .flip-box__back {
-  width: 50%;
   position: absolute;
   backface-visibility: hidden;
 }
 
 .flip-box__front {
-  //height: 100%;
   visibility: visible;
 }
 
 .flip-box__back {
-  width: 80%;
+  width: 100%;
   height: 35vh;
   top: -7rem;
+  padding: 0.5rem 0;
 }
+
 
 .flip-box__back {
   transform: rotateY(180deg);

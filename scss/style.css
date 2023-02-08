@@ -223,8 +223,8 @@
 
 @media (min-width: 768px) {
   .project__content-wrapper,
-.project__picture-wrapper,
-.project__description-wrapper {
+  .project__picture-wrapper,
+  .project__description-wrapper {
     display: grid;
   }
 }
@@ -289,8 +289,8 @@
   .project__content-wrapper {
     grid-template-areas: "picture description";
     grid-template-columns: 1fr 2fr;
+    grid-gap: 1.5rem;
     align-items: center;
-    padding: 0 3rem;
   }
 }
 
@@ -307,7 +307,7 @@
 
 .project__picture {
   display: block;
-  max-width: 80%;
+  max-width: 100%;
   transition: 0.5s ease-in-out;
 }
 @media (min-width: 768px) {
@@ -562,6 +562,7 @@ textarea.form__input {
   display: flex;
   justify-content: center;
   max-width: 100%;
+  height: 100%;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
@@ -572,7 +573,6 @@ textarea.form__input {
 @media (min-width: 768px) {
   .btn {
     padding: 1rem;
-    margin: 1rem;
   }
 }
 
@@ -637,7 +637,6 @@ a span::after {
 
 .flip-box__front,
 .flip-box__back {
-  width: 50%;
   position: absolute;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -648,9 +647,10 @@ a span::after {
 }
 
 .flip-box__back {
-  width: 80%;
+  width: 100%;
   height: 35vh;
   top: -7rem;
+  padding: 0.5rem 0;
 }
 
 .flip-box__back {
@@ -667,7 +667,6 @@ body {
   box-sizing: border-box;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   letter-spacing: 0.5px;
 }
@@ -776,9 +775,9 @@ section {
 }
 @media (min-width: 768px) {
   .btn:hover,
-.menu-item__link:hover,
-.btn-cta:hover,
-.project-button:hover {
+  .menu-item__link:hover,
+  .btn-cta:hover,
+  .project-button:hover {
     border-radius: 10px;
     background-color: #33cca6;
     box-shadow: -7px -7px 20px 0px #a8f0f0, -4px -4px 20px 0px #a8f0f0, 7px 7px 25px 0px rgba(0, 0, 0, 0.2), 4px 4px 15px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 0px 0px #a8f0f0, inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 0px 0px #a8f0f0, inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
