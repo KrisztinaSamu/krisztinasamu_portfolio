@@ -29,9 +29,16 @@
   margin: 1rem 2rem;
 }
 
-.devicon-github-plain,
-.devicon-linkedin-plain {
+.icon__socialMedia {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.icon__socialMedia:hover {
   @include border-style;
+  background-color: $text-color;
+  transition: 0.4s;
 }
 
 .copyright {
