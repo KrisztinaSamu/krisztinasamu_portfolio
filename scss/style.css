@@ -708,6 +708,7 @@ a span::after {
 
 body {
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
 
 * {
@@ -718,6 +719,10 @@ body {
      -moz-user-select: none;
           user-select: none;
   letter-spacing: 0.5px;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
 }
 
 h3,
