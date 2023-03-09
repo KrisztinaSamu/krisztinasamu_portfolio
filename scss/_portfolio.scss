@@ -71,6 +71,7 @@
 
 .project__content-wrapper {
   padding: 0 0.5rem;
+ // position: relative;
 
   @include min-width(medium) {
     grid-template-areas: "picture description";
@@ -82,7 +83,6 @@
 
 .project__header {
   font-size: 1.75rem;
-  padding: 1rem 1rem 0 1rem;
   text-align: center;
 
   @include min-width(medium) {
