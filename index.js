@@ -37,3 +37,11 @@ click.addEventListener("click", function() {
       block: "start"
   });
 });
+
+
+/***** flip card *****/
+
+var card = document.querySelector('.flip-box__card');
+card.addEventListener('click', function() {
+  card.classList.toggle('is-flipped');
+});

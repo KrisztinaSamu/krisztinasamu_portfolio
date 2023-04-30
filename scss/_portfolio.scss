@@ -71,7 +71,6 @@
 
 .project__content-wrapper {
   padding: 0 0.5rem;
- // position: relative;
 
   @include min-width(medium) {
     grid-template-areas: "picture description";
@@ -113,4 +112,8 @@
   @include min-width(medium) {
     max-width: 25vw;
   }
+}
+
+.project__picture-fullView {
+  width: 100%;
 }

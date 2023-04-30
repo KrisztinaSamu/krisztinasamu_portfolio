@@ -22,16 +22,10 @@ body {
   letter-spacing: 0.5px;
 }
 
-h1, h2, h3 {
-  line-height: 1.2;
-}
-
+h1,
+h2,
 h3 {
-  margin: 1.5rem;
-}
-
-p {
-  margin-bottom: 1.5rem;
+  line-height: 1.2;
 }
 
 h2 {
@@ -41,6 +35,15 @@ h2 {
 
 h3 {
   font-size: clamp(1.2rem, 2.5vw, 2.3rem);
+  margin: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 1.5rem;
 }
 
 a,
@@ -50,10 +53,6 @@ p {
 
 ul {
   list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 input,
