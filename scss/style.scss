@@ -12,6 +12,7 @@
 body {
   font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
   line-height: 1.5;
+  background-color: $lightMainBackground-color;
 }
 
 * {
@@ -29,12 +30,12 @@ h3 {
 }
 
 h2 {
-  font-size: clamp(1.6rem, 4vw, 3rem);
-  margin-bottom: clamp(0.3rem, 1vw, 3rem);
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+  margin-bottom: clamp(0.3rem, 2vw, 3rem);
 }
 
 h3 {
-  font-size: clamp(1.2rem, 2.5vw, 2.3rem);
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
   margin: 1.5rem;
 }
 
@@ -48,7 +49,7 @@ p {
 
 a,
 p {
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 ul {
@@ -69,18 +70,18 @@ section {
 }
 
 .page-wrapper {
+  background-color: $mainBackground-color;
   min-width: 200px;
   max-width: 1600px;
   min-height: 100vh;
   margin: 0 auto;
-  font-size: 1.1rem;
 
   @include min-width(medium) {
     font-size: 1.3rem;
   }
 }
 
-/*_____weboldal színei_____*/
+/*_____website colors_____*/
 
 .header,
 .project__button,
@@ -90,8 +91,8 @@ section {
   background-color: $main-color;
 }
 
-.page-wrapper,
-.navbar {
+.navbar,
+.main {
   background-color: $mainBackground-color;
 }
 

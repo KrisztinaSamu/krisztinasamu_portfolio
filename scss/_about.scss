@@ -2,9 +2,10 @@
 
 .about {
   &-section {
+    margin: 0 auto;
+
     @include min-width(small) {
       max-width: 85%;
-      margin: 0 auto;
     }
 
     @include min-width(medium) {
@@ -13,7 +14,6 @@
 
     @include min-width(large) {
       max-width: 85%;
-      margin: 0 auto;
     }
   }
 
@@ -25,7 +25,6 @@
 
     @include min-width(medium) {
       justify-content: center;
-      padding: 1rem;
     }
   }
 
@@ -43,7 +42,11 @@
 
   &-text__box {
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 1rem;
+
+    @include min-width(medium) {
+      padding: 2rem 1rem;
+    }
   }
 
   &__img-box {
@@ -51,17 +54,12 @@
   }
 
   &-photo {
-    width: 50%;
+    width: 80%;
     height: auto;
     object-fit: cover;
-    border: 0.5rem solid white;
 
     @include min-width(medium) {
-      width: 100%;
-    }
-
-    @include min-width(large) {
-      max-width: 70%;
+      max-width: 100%;
     }
   }
 }
