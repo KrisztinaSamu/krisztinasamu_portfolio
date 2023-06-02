@@ -91,11 +91,19 @@
 }
 
 .cta {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+
   @include min-width(medium) {
-    @include d_flex-jc_center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
     width: 100%;
   }
 }
+
 
 .btn-cta {
   @include min-width(medium) {

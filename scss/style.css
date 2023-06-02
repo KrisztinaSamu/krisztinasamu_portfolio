@@ -214,9 +214,16 @@
   -webkit-text-fill-color: transparent;
 }
 
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
 @media (min-width: 768px) {
   .cta {
-    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     width: 100%;
   }
