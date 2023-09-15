@@ -120,13 +120,6 @@
   transform: translateY(-7px) rotate(-45deg);
 }
 
-.cta {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
-}
-
 .about-section {
   margin: 0 auto;
 }
