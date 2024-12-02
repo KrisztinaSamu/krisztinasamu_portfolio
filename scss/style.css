@@ -18,11 +18,6 @@
   width: 100%;
   padding: 1rem;
 }
-@media (min-width: 768px) {
-  .navbar {
-    padding: 1rem;
-  }
-}
 
 .nav-menu {
   position: fixed;
@@ -42,8 +37,7 @@
     left: 0;
     top: 0;
     gap: 60px;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     justify-content: flex-end;
   }
 }
@@ -171,9 +165,11 @@
 .about__img-box {
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: auto;
 }
 .about-photo {
-  width: 80%;
+  width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;

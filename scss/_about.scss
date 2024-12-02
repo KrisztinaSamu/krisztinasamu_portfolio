@@ -51,10 +51,12 @@
 
   &__img-box {
     @include d_flex-jc_center;
+    width: 100%;
+    height: auto;
   }
 
   &-photo {
-    width: 80%;
+    width: 100%;
     height: auto;
     object-fit: cover;
 

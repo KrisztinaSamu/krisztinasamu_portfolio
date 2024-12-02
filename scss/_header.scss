@@ -19,10 +19,6 @@
   justify-content: space-between;
   width: 100%;
   padding: 1rem;
-
-  @include min-width(medium) {
-    padding: 1rem;
-  }
 }
 
 .nav-menu {
@@ -42,8 +38,7 @@
     left: 0;
     top: 0;
     gap: 60px;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     justify-content: flex-end;
   }
 }
