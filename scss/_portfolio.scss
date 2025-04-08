@@ -43,14 +43,14 @@
   padding: 1rem;
   border: 2px solid $main-color;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: justify;
 
   @include min-width(medium) {
     width: 80%;
   }
   @include min-width(xlarge) {
-    width: 45%;
+    width: 40%;
   }
 }
 
@@ -81,11 +81,11 @@
 }
 
 .project__header {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   text-align: center;
 
   @include min-width(medium) {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -111,8 +111,6 @@
   }
 }
 
-
-
 .project__button {
   width: 80vw;
 
@@ -123,4 +121,10 @@
 
 .project__picture-fullView {
   width: 100%;
+}
+
+.qa-project {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

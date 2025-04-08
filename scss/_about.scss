@@ -51,7 +51,11 @@
 
   &__img-box {
     @include d_flex-jc_center;
-    width: 100%;
+    max-width: 60%;
+    @include min-width(medium) {
+      max-width: 100%;
+    }
+
     height: auto;
   }
 
