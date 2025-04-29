@@ -52,6 +52,7 @@
   &__img-box {
     @include d_flex-jc_center;
     max-width: 60%;
+
     @include min-width(medium) {
       max-width: 100%;
     }
@@ -109,7 +110,6 @@
     width: 100%;
   }
 }
-
 
 .btn-cta {
   @include min-width(medium) {

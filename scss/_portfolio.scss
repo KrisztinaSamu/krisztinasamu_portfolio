@@ -49,6 +49,7 @@
   @include min-width(medium) {
     width: 80%;
   }
+
   @include min-width(xlarge) {
     width: 40%;
   }
@@ -104,6 +105,7 @@
   &:hover {
     @include min-width(medium) {
       transform: scale(1.5);
+
       .project__description-wrapper {
         transform: scale(-2);
       }
